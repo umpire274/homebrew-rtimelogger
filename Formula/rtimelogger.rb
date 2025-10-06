@@ -1,4 +1,4 @@
-class Rtimelog < Formula
+class Rtimelogger < Formula
   desc "Rust-based CLI tool for personal time logging and tracking"
   homepage "https://github.com/umpire274/rTimelogger"
   license "MIT"
