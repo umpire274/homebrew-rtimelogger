@@ -2,21 +2,21 @@ class Rtimelogger < Formula
   desc "Rust-based CLI tool for personal time logging and tracking"
   homepage "https://github.com/umpire274/rTimelogger"
   license "MIT"
-  version "0.5.0"
+  version "0.5.1"
 
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/umpire274/rTimelogger/releases/download/v#{version}/rtimelogger-#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "0e77c9d50509fad9c68107de1a094b36dd3d389607e72d4e07e7c3e48d792d37"
+      sha256 "e2e3c8239bd1908b68703715c725ef32d9394a3e78e4ca3e6ea3b1f9f8044c58"
     elsif Hardware::CPU.arm?
       url "https://github.com/umpire274/rTimelogger/releases/download/v#{version}/rtimelogger-#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "9b29478194d8166450be1f827652ed927bcbe1f946ae25a4cdf5c2fac679be7b"
+      sha256 "b71ee95d989ef9a8d2eca5ab61f5dc95b81bd142c0d367e0d38be54298fd9400"
     end
   end
 
   on_linux do
     url "https://github.com/umpire274/rTimelogger/releases/download/v#{version}/rtimelogger-#{version}-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "e49db8b7afd3e4634fb0182a932185a755512f43fa3ba2074ec85a0113fa56a6"
+    sha256 "32acf06814f72d912ce6d88342a1b075c8fbe4a1d007c63c47fbbf42e2f9c85c"
   end
 
   livecheck do
